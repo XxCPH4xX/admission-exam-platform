@@ -2,9 +2,9 @@ import { NextResponse } from "next/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 
 /**
- * GET /api/cron/expire — called by Vercel Cron every minute.
- * Finalizes attempts whose deadline passed (scores + status flip) even when
- * no student request triggers the lazy path.
+ * GET /api/cron/expire — called by Vercel Cron daily (Hobby plan limit; the
+ * app also finalizes stale attempts lazily on student page loads, so the cron
+ * is only a backstop).
  *
  * Protected by the CRON_SECRET env var (Vercel sends it as a Bearer token).
  * Set CRON_SECRET in Vercel project settings; locally any value works.
