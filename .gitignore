@@ -42,3 +42,6 @@ next-env.d.ts
 
 # e2e screenshots (local artifacts)
 scripts/*.png
+
+.vercel
+.env*
