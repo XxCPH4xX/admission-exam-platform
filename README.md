@@ -58,8 +58,8 @@ Creates both accounts (idempotent — safe to re-run):
 
 | Role | Email | Password |
 | --- | --- | --- |
-| Admin | `admin@exam.com` | `Admin@1234` |
-| Student | `student@exam.com` | `Student@1234` |
+| Admin | `admixam.com` | `Admi234` |
+| Student | `stuenxam.com` | `Stude234` |
 
 Override via env: `SEED_ADMIN_EMAIL`, `SEED_ADMIN_PASSWORD`,
 `SEED_STUDENT_EMAIL`, `SEED_STUDENT_PASSWORD`.
